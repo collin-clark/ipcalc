@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="jumbotron">
+  <div class="container">
+    <h2 class="display-12">IP Calc</h2>
+    <p class="lead">IP Address and Subnet Information</p>
+  </div>
+</div>	
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<form method="post" action="calc.cgi" autocomplete="off">
+<fieldset>
+
+<div class="container">	
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ipaddy">IP Address & Mask</label>  
+  <div class="col-md-4">
+  <input id="ipaddy" name="ipaddy" type="text" placeholder="10.1.1.1/29 or 10.1.1.1 255.255.255.248" class="form-control input-md" required="" required pattern="^((\d{1,2}|1\d{2}|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d{2}|2[0-4]\d|25[0-5]).*$">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="calcbutton"></label>
+  <div class="col-md-12">
+    <button id="calcbutton" name="calcbutton" class="btn btn-primary">Calculate</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
