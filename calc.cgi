@@ -1,4 +1,4 @@
-#! C:\Users\243607\AppData\Local\Programs\Python\Python37-32\python.exe
+#! Path to your python.exe
 ############################################
 # A simple Subnet Calculator using netaddr.
 # Copy index.html and calc.cgi to a folder
