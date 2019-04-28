@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                <br>
+                <div class="container">
+                <div class="header clearfix">
+                <nav>
+                <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                <a class="nav-link active" href="./">Another subnet <span class="sr-only">(current)</span></a>
+                </li>
+                </ul>
+                </nav>
+                <h2 class="text-muted">{{ipaddr}}</h2>
+                <hr>
+                </div>
+
+                <div class="row marketing">
+                <div class="col-lg-6">
+                <h4>Network</h4>
+                <p><h6><span class="badge badge-success">Network ID</span> {{ipnetnetwork}}</h6>
+                <h6><span class="badge badge-success">Broadcast</span> {{ipnetbroadcast}}</h6></p>
+
+                <h4>Subnet Mask</h4>
+                <p><h6> <span class="badge badge-primary">Subnet Mask</span> {{ipnetnetmask}}</h6>
+                <h6> <span class="badge badge-primary">CIDR</span> {{ipnetcidr}}</h6>
+                <h6> <span class="badge badge-primary">Wilcard Mask</span> {{ipnethostmask}}</h6>
+                </p>
+
+                <h4>Hosts</h4>
+                <p><h6> <span class="badge badge-info">Network Size</span> {{ipnetsize}}</h6>
+                <h6> <span class="badge badge-info">Host Range</span> {{ipnetfirst}} - {{ipnetlast}}</h6></p>
+                </div>
+
+                <div class="col-lg-6">
+                <h4>Network Binary</h4>
+                <p><h6> <span class="badge badge-secondary">Network ID</span> {{ipnetnetworkbits}}</h6></p>
+
+                <h4>Subnet Mask Binary</h4>
+                <p><h6> <span class="badge badge-warning">Subnet Mask</span> {{ipnetnetmaskbits}}</h6></p>
+
+                <h4>Neighboring Networks</h4>
+                <p><h6> <span class="badge badge-dark">Previous 3 Subnets</span> {{ipnet_1}}, {{ipnet_2}}, {{ipnet_3}}</h6>
+                <h6> <span class="badge badge-dark">Next 3 Subnets</span> {{ipnet1}}, {{ipnet2}}, {{ipnet3}}</h6></p>
+
+                </div>
+                </div>
+
+                </div> <!-- /container -->
+
+    
+  </body>
+</html>
