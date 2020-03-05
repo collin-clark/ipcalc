@@ -37,6 +37,7 @@ def ipcalc_results():
     ipnet1 = ipnet.next(1)
     ipnet2 = ipnet.next(2)
     ipnet3 = ipnet.next(3)
+    supernets = ipnet.supernet(8)
 
     # Render the template and pass it the variables from this script
     return render_template('ipcalc_results.html',
@@ -57,7 +58,8 @@ def ipcalc_results():
         ipnet_3=ipnet_3,
         ipnet1=ipnet1,
         ipnet2=ipnet2,
-        ipnet3=ipnet3)
+        ipnet3=ipnet3,
+        supernets=supernets)
 
 # The development server
 if __name__ == '__main__':
