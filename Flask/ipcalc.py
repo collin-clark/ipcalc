@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
+from netaddr import *
+import docstring
 
 app = Flask(__name__)
-from netaddr import *
 
 @app.route('/')
 def ipcalc():
