@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-from netaddr import *
-import docstring
+from netaddr import IPAddress, IPNetwork
 
 app = Flask(__name__)
 
