@@ -1,3 +1,9 @@
+'''
+This is an app that takes a network IP address and subnet mask
+and converts to it's network boundary and then spills out 
+additional information around that network.
+'''
+
 from flask import Flask, render_template, request
 from netaddr import IPAddress, IPNetwork
 
