@@ -5,10 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def ipcalc():
+    '''
+    Define the homepage of the application. Ask what we want to subnet.
+    '''
     return render_template('ipcalc.html')
-'''
-Define the homepage of the application. Ask what we want to subnet.
-'''
+
 
 @app.route('/ipcalc_results')
 def ipcalc_results():
